@@ -1,0 +1,32 @@
+body {
+    transition: 1.5s;
+    }
+.night-toggle {
+    width: 100px;
+    height: 100px;
+    right: 200px;
+    top: 20px;
+    position: absolute;
+    }
+.night-toggle:hover{
+      cursor: pointer;
+    }
+.moon {
+      background-color: transparent;
+      box-shadow: -6px 1px 0 3px #275e8e;
+      border-left:3px solid #27476D;
+      border-radius:50%;
+      width: 100px;
+      height: 100px;
+      margin-left:8px;
+      margin-top:0px;
+      transition: 2s;
+    }
+.sun {
+      background-color: #fdd462;
+      box-shadow: 2px 0px 0px 1px #D19C29;
+      border-radius:50%;
+      width: 120px;
+      height: 120px;
+      transition: 2s;
+    }
