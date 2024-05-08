@@ -1,0 +1,35 @@
+#btt{
+    text-align: center;
+    padding-top: 20px;
+}
+#ld{
+    padding: 10px 5px;
+    box-shadow: 10x 15px 10px gray;
+    border: none;
+    cursor: pointer;
+    color: rgb(180, 180, 180);
+    width: 120px;
+    height: 52px;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20px;
+}
+#ld:hover{
+    color: grey;
+}
+
+#ani{
+    background-color: rgb(249, 249, 249)  ;
+    width: 320px;
+    border-radius: 15px;
+    margin-left: 40%;
+    border:2px solid black;
+}
+body{
+    background-color: lightgrey;
+}
+@media screen and (max-width:600px){
+    .ani{
+        margin-right:70%;
+    }
+} 
