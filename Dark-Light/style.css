@@ -1,11 +1,12 @@
 body {
-    transition: 1.5s;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
     }
 .night-toggle {
     width: 100px;
     height: 100px;
     right: 200px;
-    top: 20px;
+    top:50px;
     position: absolute;
     }
 .night-toggle:hover{
@@ -35,29 +36,34 @@ body {
 
 .land{
   position: absolute;
-  bottom: -429px;
-  left:-1000px;
-  background-color: rgb(149, 57, 17);
-  height: 100px;
-  width: 1300px;
+  bottom: -10px;
+  left: 0;
+  transition: 0.5s ease-in-out;
+  background-color: rgb(193, 75, 25);
+  height: 230px;
+  width: 1600px;
   z-index: 1;
+  /* border: 1px solid black; */
 }
 
 .sky{
   position: absolute;
-  width: 1300px;
-  height: 470px;
-  top:-20px;
-  left: -1000px;
+  width: 1600px;
+  height: 720px;
+  top:0;
+  left: 0;
+  transition: 0.5s ease-in-out;
   background-color: rgb(79, 168, 240);
   z-index: -2;
 }
 
 .mountains{
   position: absolute;
-  border: 1px solid black;
-  width: 800px;
-  bottom:-429px;
+  width: 700px;
+  height: 400px;
+  left: 250px;
+  bottom: -100px;
+  transition: 0.5s ease-in-out;
 
 }
 
@@ -65,20 +71,23 @@ body {
   position: absolute;
   width: 200px;
   height: 200px;
-  bottom: 0;
+  left: -20px;
+  /* border: 1px solid black; */
   z-index: -1;
-  background-color: rgb(193, 75, 25);
+  background-color: rgb(26, 170, 38);
   transform: rotate(45deg);
+  transition: 0.5s ease-in-out;
 }
 
 .m2{
   position: absolute;
   width: 250px;
   height: 250px;
-  bottom: -20px;
-  left: -170px;
+
+  transition: 0.5s ease-in-out;
+
   z-index: -1;
-  background-color: rgb(193, 75, 25);
+  background-color: rgb(26, 170, 38);
   transform: rotate(45deg);
  
  
@@ -86,7 +95,89 @@ body {
 
 }
 
+.m3{
+  position: absolute;
+  width: 200px;
+  height: 200px;   transition: 0.5s ease-in-out;
+  left: -100px;
+  /* border: 1px solid black; */
 
-  .hide{
-    display: none;
-  }
+  z-index: -1;
+ 
+  background-color: rgb(26, 170, 38);
+  transform: rotate(45deg);
+}
+
+
+.d-land{
+  position: absolute;   transition: 0.5s ease-in-out;  
+  bottom: -10px;
+  left: 0;
+
+  background-color: #275e8e;
+  height: 230px;
+  width: 1600px;
+  z-index: 1;
+  /* border: 1px solid black; */
+}
+
+.d-sky{
+  position: absolute;
+  width: 1600px;
+  height: 720px;
+  top:0;
+  left: 0;
+  background-color: transparent;
+  z-index: -2;
+  transition: 0.5s ease-in-out;
+}
+
+.d-mountains{
+  position: absolute;
+  width: 700px;
+  height: 400px;
+  left: 250px;
+  bottom: -100px;
+  transition: 0.5s ease-in-out;
+
+}
+
+.d-m1{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: -20px;
+  transition: 0.5s ease-in-out;
+  /* border: 1px solid black; */
+  z-index: -1;
+  background-color: #27476D;
+  transform: rotate(45deg);
+}
+
+.d-m2{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  transition: 0.5s ease-in-out;
+  z-index: -1;
+  background-color: #27476D;
+  transform: rotate(45deg);
+ 
+ 
+
+
+}
+
+.d-m3{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  /* border: 1px solid black; */
+  transition: 0.5s ease-in-out;
+  z-index: -1;
+  
+  background-color: #27476D;
+  transform: rotate(45deg);
+}
+
