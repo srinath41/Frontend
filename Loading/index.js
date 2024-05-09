@@ -48,7 +48,7 @@
 
 
 
-let s = "⬛⬛⬛⬛⬛⬛⬛";
+let s = "⬛⬛⬛⬛⬛⬛";
 let c = 0;
 let ld = document.getElementById("ld");
 let ani = document.getElementById("ani");

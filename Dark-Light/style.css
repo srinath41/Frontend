@@ -20,13 +20,73 @@ body {
       height: 100px;
       margin-left:8px;
       margin-top:0px;
-      transition: 2s;
+      transition: 0.5s ease-in-out;
     }
+
 .sun {
       background-color: #fdd462;
       box-shadow: 2px 0px 0px 1px #D19C29;
       border-radius:50%;
       width: 120px;
       height: 120px;
-      transition: 2s;
+      transition: 0.5s ease-in-out;
+      position: relative;
     }
+
+.land{
+  position: absolute;
+  bottom: -429px;
+  left:-1000px;
+  background-color: rgb(149, 57, 17);
+  height: 100px;
+  width: 1300px;
+  z-index: 1;
+}
+
+.sky{
+  position: absolute;
+  width: 1300px;
+  height: 470px;
+  top:-20px;
+  left: -1000px;
+  background-color: rgb(79, 168, 240);
+  z-index: -2;
+}
+
+.mountains{
+  position: absolute;
+  border: 1px solid black;
+  width: 800px;
+  bottom:-429px;
+
+}
+
+.m1{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgb(193, 75, 25);
+  transform: rotate(45deg);
+}
+
+.m2{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  bottom: -20px;
+  left: -170px;
+  z-index: -1;
+  background-color: rgb(193, 75, 25);
+  transform: rotate(45deg);
+ 
+ 
+
+
+}
+
+
+  .hide{
+    display: none;
+  }
