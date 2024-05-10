@@ -1,21 +1,3 @@
-function checkFb(items) {
-  items.forEach((item) => {
-    if (item.classList.contains("b")) return true;
-  });
-  return false;
-}
-function checkFt(items) {
-  items.forEach((item) => {
-    if (item.classList.contains("t")) return true;
-  });
-  return false;
-}
-function checkl(items) {
-  items.forEach((item) => {
-    if (item.classList.contains("l")) return true;
-  });
-  return false;
-}
 
 function switchMode() {
   let moon = document.getElementById("sun");
@@ -31,6 +13,7 @@ function switchMode() {
     document.querySelectorAll(".b") || document.querySelectorAll(".d-b");
   let leaves =
     document.querySelectorAll(".l") || document.querySelectorAll(".d-l");
+  let rivers =  document.querySelectorAll(".r") || document.querySelectorAll(".d-r");
 
   if (
     moon.className == "sun" &&
@@ -65,6 +48,12 @@ function switchMode() {
         leaf.classList.add("d-l");
       }
     });
+    rivers.forEach((stream) => {
+      if (stream.classList.contains("r")) {
+        stream.classList.remove("r");
+        stream.classList.add("d-r");
+      }
+    });
 
     document.body.style.backgroundColor = "#141D26";
     document.body.style.color = "#fff";
@@ -72,6 +61,7 @@ function switchMode() {
     let trees = document.querySelectorAll(".d-t");
     let branches = document.querySelectorAll(".d-b");
     let leaves = document.querySelectorAll(".d-l");
+    let rivers =  document.querySelectorAll(".d-r");
     moon.className = "sun";
     m1.className = "m1";
     m2.className = "m2";
@@ -96,6 +86,13 @@ function switchMode() {
       if (leaf.classList.contains("d-l")) {
         leaf.classList.remove("d-l");
         leaf.classList.add("l");
+      }
+    });
+
+    rivers.forEach((stream) => {
+      if (stream.classList.contains("d-r")) {
+        stream.classList.remove("d-r");
+        stream.classList.add("r");
       }
     });
 
