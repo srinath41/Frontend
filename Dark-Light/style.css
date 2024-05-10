@@ -1,148 +1,275 @@
 body {
-    transition: 0.5s ease-in-out;
-    overflow: hidden;
-    }
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
 .night-toggle {
-    width: 100px;
-    height: 100px;
-    right: 200px;
-    top:50px;
-    position: absolute;
-    }
-.night-toggle:hover{
-      cursor: pointer;
-    }
+  width: 100px;
+  height: 100px;
+  right: 200px;
+  top: 50px;
+  position: absolute;
+}
+.night-toggle:hover {
+  cursor: pointer;
+}
 .moon {
-      background-color: transparent;
-      box-shadow: -6px 1px 0 3px #275e8e;
-      border-left:3px solid #27476D;
-      border-radius:50%;
-      width: 100px;
-      height: 100px;
-      margin-left:8px;
-      margin-top:0px;
-      transition: 0.5s ease-in-out;
-    }
+  background-color: transparent;
+  box-shadow: -6px 1px 0 3px #275e8e;
+  border-left: 3px solid #27476d;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: 8px;
+  margin-top: 0px;
+  transition: 0.5s ease-in-out;
+}
 
 .sun {
-      background-color: #fdd462;
-      box-shadow: 2px 0px 0px 1px #D19C29;
-      border-radius:50%;
-      width: 120px;
-      height: 120px;
-      transition: 0.5s ease-in-out;
-      position: relative;
-    }
+  background-color: #fdd462;
+  box-shadow: 2px 0px 0px 1px #d19c29;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  transition: 0.5s ease-in-out;
+  position: relative;
+}
 
-.land{
+.land {
   position: absolute;
   bottom: -10px;
   left: 0;
   transition: 0.5s ease-in-out;
-  background-color: rgb(193, 75, 25);
+  background-color: rgb(202, 75, 20);
   height: 230px;
   width: 1600px;
   z-index: 1;
   /* border: 1px solid black; */
 }
 
-.sky{
+.sky {
   position: absolute;
   width: 1600px;
   height: 720px;
-  top:0;
+  top: 0;
   left: 0;
   transition: 0.5s ease-in-out;
   background-color: rgb(79, 168, 240);
   z-index: -2;
 }
 
-.mountains{
+.mountains {
   position: absolute;
   width: 700px;
   height: 400px;
   left: 250px;
   bottom: -100px;
   transition: 0.5s ease-in-out;
-
 }
 
-.m1{
+.m1 {
   position: absolute;
   width: 200px;
   height: 200px;
   left: -20px;
   /* border: 1px solid black; */
   z-index: -1;
-  background-color: rgb(26, 170, 38);
+  background-color: rgb(27, 148, 37);
   transform: rotate(45deg);
   transition: 0.5s ease-in-out;
 }
 
-.m2{
+.m2 {
   position: absolute;
   width: 250px;
   height: 250px;
-
   transition: 0.5s ease-in-out;
-
   z-index: -1;
-  background-color: rgb(26, 170, 38);
+  background-color: rgb(14, 107, 22);
   transform: rotate(45deg);
- 
- 
-
-
 }
 
-.m3{
+.m3 {
   position: absolute;
   width: 200px;
-  height: 200px;   transition: 0.5s ease-in-out;
+  height: 200px;
+  transition: 0.5s ease-in-out;
   left: -100px;
-  /* border: 1px solid black; */
-
   z-index: -1;
- 
+
   background-color: rgb(26, 170, 38);
   transform: rotate(45deg);
 }
 
+.trees {
+  /* border: 1px solid black; */
+  width: 400px;
+  position: absolute;
+  height: 200px;
+  left: 600px;
+  bottom: 100px;
+}
 
-.d-land{
-  position: absolute;   transition: 0.5s ease-in-out;  
+.t {
+  top: 30px;
+  position: absolute;
+  width: 20px;
+  height: 80px;
+  background-color: rgb(202, 75, 20);
+}
+
+.d-t{
+  background-color: #145085;
+  top: 30px;
+  position: absolute;
+  width: 20px;
+  height: 80px;
+}
+
+
+
+.t1 {
+  left: 20px;
+}
+
+.b {
+  position: absolute;
+  background-color: rgb(202, 75, 20);
+  width: 10px;
+  height: 40px;
+}
+
+.d-b{
+  position: absolute;
+  background-color: #145085;
+  width: 10px;
+  height: 40px;
+}
+
+.b1 {
+  transform: rotate(45deg);
+  left: 17px;
+  top: -20px;
+}
+
+.b2 {
+  transform: rotate(130deg);
+  left: -5px;
+  top: -20px;
+}
+
+.b3 {
+  transform: rotate(180deg);
+  left: 5px;
+  top: -20px;
+}
+
+.leaves {
+  position: absolute;
+}
+
+.l {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.d-l{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #27476d;
+}
+
+.l1 {
+  left: -35px;
+  top: -37px;
+}
+
+.l2 {
+  left: -30px;
+  top: -50px;
+}
+
+.l3 {
+  left: -10px;
+  top: -60px;
+}
+
+.l4 {
+  left: 12px;
+  top: -50px;
+}
+
+.l5 {
+  left: 24px;
+  top: -37px;
+}
+
+.l6 {
+  left: -6px;
+  top: -39px;
+}
+
+.t2 {
+  left: 130px;
+}
+
+.t3 {
+  left: 236px;
+}
+
+.t4 {
+  left: 340px;
+}
+
+.t5{
+  left: 440px;
+}
+.t6{
+  left: 540px;
+}
+
+
+
+/* darkness enters here */
+
+.d-land {
+  position: absolute;
+  transition: 0.5s ease-in-out;
   bottom: -10px;
   left: 0;
 
-  background-color: #275e8e;
+  background-color: #145085;
   height: 230px;
   width: 1600px;
   z-index: 1;
   /* border: 1px solid black; */
 }
 
-.d-sky{
+.d-sky {
   position: absolute;
   width: 1600px;
   height: 720px;
-  top:0;
+  top: 0;
   left: 0;
-  background-color: transparent;
+  background-color: rgb(12, 25, 43);
   z-index: -2;
   transition: 0.5s ease-in-out;
 }
 
-.d-mountains{
+.d-mountains {
   position: absolute;
   width: 700px;
   height: 400px;
   left: 250px;
   bottom: -100px;
   transition: 0.5s ease-in-out;
-
 }
 
-.d-m1{
+.d-m1 {
   position: absolute;
   width: 200px;
   height: 200px;
@@ -150,25 +277,21 @@ body {
   transition: 0.5s ease-in-out;
   /* border: 1px solid black; */
   z-index: -1;
-  background-color: #27476D;
+  background-color: #1b4c88;
   transform: rotate(45deg);
 }
 
-.d-m2{
+.d-m2 {
   position: absolute;
   width: 250px;
   height: 250px;
   transition: 0.5s ease-in-out;
   z-index: -1;
-  background-color: #27476D;
+  background-color: #27476d;
   transform: rotate(45deg);
- 
- 
-
-
 }
 
-.d-m3{
+.d-m3 {
   position: absolute;
   width: 200px;
   height: 200px;
@@ -176,8 +299,9 @@ body {
   /* border: 1px solid black; */
   transition: 0.5s ease-in-out;
   z-index: -1;
-  
-  background-color: #27476D;
+
+  background-color: #1361c0;
   transform: rotate(45deg);
 }
+
 
